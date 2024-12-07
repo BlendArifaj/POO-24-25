@@ -1,0 +1,3 @@
+Të krijohet tipi i gabimit të përsonalizuar (Custom Exception) NotaGabim, ashtu që në momentin që shkaktohet
+ky gabim, përmbajtja e gabimit duhet të ruhet në fajllin ‘Gabimet.txt’.  Dhe të krijohet klasa përkatëse për
+leximin e rreshtave në fjallin `Gabimet.txt`.
