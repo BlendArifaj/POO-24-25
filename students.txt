@@ -1,0 +1,7 @@
+Student;1;Filan Fisteku;5.5
+Student;2;Fistek Filani;9.9
+Student;1;Filan Fisteku;5.5
+Student;2;Fistek Filani;9.9
+Student;1;Filan Fisteku;5.5
+Student;2;Fistek Filani;9.9
+Professor;5;filan fisteku;2.1
