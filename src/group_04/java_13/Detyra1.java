@@ -1,4 +1,4 @@
-package group_03.java_13;
+package group_04.java_13;
 
 /*
 Të krijohet programi në gjuhën programuese Java për menaxhimin e transfereve bankare.

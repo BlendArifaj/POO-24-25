@@ -1,4 +1,4 @@
-package group_03.java_13;
+package group_04.java_13;
 
 
 import java.io.FileWriter;
@@ -57,30 +57,30 @@ abstract class UserData{
     }
 }
 class Profesori extends UserData implements NotimiInterface{
-   Profesori(int id, String emri){
-       super(id, emri);
-   }
-   public void shtypDetajet(){
+    Profesori(int id, String emri){
+        super(id, emri);
+    }
+    public void shtypDetajet(){
         System.out.println("Id: " + this.getId());
         System.out.println("Emri: " + this.getEmri());
-   }
-   public void vendosNoten(int studentId, String lenda, int nota){
-       if(nota < 5 || nota > 10){
-           System.out.println("Nota nuk eshte valide");
-           return;
-       }
-       Nota notaObj = new Nota(studentId, lenda, nota);
-       this.ruajNotenNeFile(notaObj);
-   }
-   public void ruajNotenNeFile(Nota nota){
-       try{
-           FileWriter fw = new FileWriter(NOTAT_FILENAME, true);
-           fw.write(nota.toFile());
-           fw.close();
-       }catch (IOException e){
+    }
+    public void vendosNoten(int studentId, String lenda, int nota){
+        if(nota < 5 || nota > 10){
+            System.out.println("Nota nuk eshte valide");
+            return;
+        }
+        Nota notaObj = new Nota(studentId, lenda, nota);
+        this.ruajNotenNeFile(notaObj);
+    }
+    public void ruajNotenNeFile(Nota nota){
+        try{
+            FileWriter fw = new FileWriter(NOTAT_FILENAME, true);
+            fw.write(nota.toFile());
+            fw.close();
+        }catch (IOException e){
             System.out.println("Nota nuk eshte ruajtur me sukses!");
-       }
-   }
+        }
+    }
 }
 public class Detyra2 {
 }
